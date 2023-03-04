@@ -18,14 +18,14 @@ using namespace std;
 
 ofstream logger;
 
-#define divade "\n------------------------------------------------\n"
+#define divide "\n------------------------------------------------\n"
 inline
 void log(const string&text)
 {
     auto t=time(0);
     const char*const time=asctime(localtime(&t));
-    logger  <<divade<<time<<'['<<text<<']'<<divade;
-    cout    <<divade<<time<<'['<<text<<']'<<divade;
+    logger  <<divide<<time<<'['<<text<<']'<<divide;
+    cout    <<divide<<time<<'['<<text<<']'<<divide;
 }
 
 exprtk::expression<double>expression;
